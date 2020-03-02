@@ -1,0 +1,93 @@
+* {
+	font-family: Sans-serif;
+	margin: 50;
+	padding: 50;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: black,
+}
+
+h2 {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#logo {
+	float: center;
+}
+
+#container {
+		background-color: #cce8e8;
+    margin: auto;
+		width: 70%;
+		border-radius: 1em;
+
+}
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: black;
+	border-radius: 1em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 1em;
+	padding: 1em;
+	z-index: 20;
+	background-color: #aaadad;
+}
+
+
+#accordion input:checked + label {
+	background: #ccc;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: black;
+	margin-bottom: 0;
+}
+
+#accordion article {
+	background: #f7f7f7;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+	color: black;
+}
+
+#accordion article p {
+	padding: 1em;
+	color: black;
+}
+
+#accordion input:checked article {
+	color: black;
+}
+
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: 1em;
+	color: black;
+}
+
+table {
+font-family: Sans-serif;
+border-collapse: collapse;
+width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+
+body {
+    background-color: #41c2d9;
+    color: black;
+		margin-top: 100px;
+  	margin-bottom: 100px;
+  	margin-right: 100px;
+  	margin-left: 80px;
+}
